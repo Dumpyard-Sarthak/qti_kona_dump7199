@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <Android-Version>11</Android-Version>
+    <version>20201203</version>
+
+    <!--bool ID="2004">true</bool-->
+
+    <!--string ID="5005">on</string-->
+
+    <!--item ID="4010" format="float" type="dimen">7.0</item-->
+
+    <!--integer ID="3011">2</integer-->
+
+    <!-- config for metal case detection -->
+    <!-- bit 1: enable metal case detection feature -->
+    <!-- bit 2: enable sensor detection -->
+    <!-- bit 3: enable gnss status detection -->
+    <!-- bit 4: enable debug report detection -->
+    <!-- bit 5: enable gnss fix detection -->
+    <integer name="config_gpsShowTipsConfig">31</integer>
+
+    <!-- parameters for metal case detection -->
+    <string name="config_gpsShowTipsParams">4,6,2,0,205,250,195,225,1.5,2.5,0.8,2.0,56,54,28.0,20.0,8,5,500.0,100.0,0.3,0.5,0.4,-0.3,-0.5,-0.4,-2.0,0,0,0,0,0,0,0,0,0,0,5,3,3,3,3</string>
+    <!-- packages to show gps weak signal tips -->
+    <string-array name="config_gpsShowTipsApp">
+        <item>com.baidu.BaiduMap</item>
+        <item>com.autonavi.minimap</item>
+        <item>com.tencent.map</item>
+        <item>com.sdu.didi.gsui</item>
+        <item>com.google.android.apps.maps</item>
+        <item>com.meituan.banma.errand</item>
+        <item>com.sankuai.meituan.dispatch.crowdsource</item>
+        <item>com.sankuai.meituan.dispatch.homebrew</item>
+        <item>me.ele.crowdsource</item>
+        <item>com.dada.mobile.android</item>
+    </string-array>
+
+    <!-- gps tips simplified Chinese url -->
+    <string name="config_gpsShowTipsUrlCn">https://tipsfs.oppomobile.com/uploads/html/2020/05/07/3c6714be-594e-4431-b669-25139df71200.html</string>
+</filter-conf>
